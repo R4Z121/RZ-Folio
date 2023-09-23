@@ -2,6 +2,7 @@ import Navbar from "./components/navbar/Navbar";
 import Jumbo from "./components/jumbo/Jumbo";
 import About from "./components/about/About";
 import Skill from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <div className="flex flex-col gap-7">
         <About />
         <Skill />
+        <Projects />
       </div>
     </div>
   )  
