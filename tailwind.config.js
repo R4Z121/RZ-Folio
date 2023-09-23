@@ -20,12 +20,19 @@ export default {
         "132": "33rem"
       },
       maxWidth: {
+        "20": "5rem",
         "56": "14rem",
         "96": "24rem",
         "112": "28rem",
       },
+      maxHeight: {
+        "20": "5rem"
+      },
       transitionProperty: {
         "bg": "background-color"
+      },
+      screens: {
+        "xs": "450px"
       }
     },
   },
