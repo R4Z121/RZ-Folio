@@ -9,6 +9,7 @@ export default {
       colors: {
         "app-red": "#950101",
         "app-dark-red": "#3D0000",
+        "app-soft-black" : "#191919"
       },
       width: {
         "112": "28rem"
@@ -19,7 +20,12 @@ export default {
         "132": "33rem"
       },
       maxWidth: {
+        "56": "14rem",
+        "96": "24rem",
         "112": "28rem",
+      },
+      transitionProperty: {
+        "bg": "background-color"
       }
     },
   },

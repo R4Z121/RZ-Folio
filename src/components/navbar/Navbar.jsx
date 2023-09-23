@@ -24,8 +24,8 @@ export default function Navbar() {
 
 
   return (
-    <div className={`flex flex-col fixed w-full sm:flex-row sm:justify-between sm:items-center ${scrolledNav ? 'bg-app-red border border-b-app-dark-red' : 'bg-black'}`}>
-      <Brand burgerclick={burgerClickHandler} navShowing={toggleNav} />
+    <div className={`flex flex-col fixed w-full sm:flex-row sm:justify-between sm:items-center ${scrolledNav ? 'bg-app-red sm:border-b-8 sm:border-b-app-dark-red' : 'bg-black'} sm:transition-bg sm:duration-300`}>
+      <Brand burgerclick={burgerClickHandler} navShowing={toggleNav} scrolledNav={scrolledNav} />
       <NavList show={toggleNav} />
     </div>
   )
