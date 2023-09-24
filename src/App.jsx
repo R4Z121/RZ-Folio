@@ -3,6 +3,7 @@ import Jumbo from "./components/jumbo/Jumbo";
 import About from "./components/about/About";
 import Skill from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <About />
         <Skill />
         <Projects />
+        <Footer />
       </div>
     </div>
   )  

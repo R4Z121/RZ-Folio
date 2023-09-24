@@ -11,6 +11,12 @@ import tailwindLogo from '../assets/img/skills/tailwind-logo.png';
 import gitLogo from '../assets/img/skills/git-logo.png';
 import githubLogo from '../assets/img/skills/github-logo.png';
 import postmanLogo from '../assets/img/skills/postman-logo.png';
+import locationLogo  from "../assets/icons/location.svg";
+import mailLogo  from "../assets/icons/mail.svg";
+import whatsappLogo  from "../assets/icons/whatsapp.svg";
+import instagramLogo  from "../assets/icons/instagram.svg";
+import linkedinLogo  from "../assets/icons/linkedin.svg";
+import githubIcons  from "../assets/icons/github.svg";
 
 export const getJumboData = () => {
   return {
@@ -146,5 +152,55 @@ export const getProjectsData = () => {
       github: "https://github.com/R4Z121/Crypt4Z",
       tools: ["HTML","CSS","Javascript","TailwindCSS","Webpack"]
     },
+  ]
+}
+
+export const getContactData = () => {
+  return [
+    {
+      name: "location",
+      desc: [
+        "Pangeran Ayin Street",
+        "Palembang, Indonesia"
+      ],
+      link: "",
+      imgSource: locationLogo
+    },
+    {
+      name: "mail",
+      desc: [
+        "m.rizkyazizi@gmail.com"
+      ],
+      link: "mailto:m.rizkyazizi@gmail.com",
+      imgSource: mailLogo
+    },
+    {
+      name: "whatsapp",
+      desc: [
+        "+62 896 30375105"
+      ],
+      link: "https://api.whatsapp.com/send?phone=6289630375105",
+      imgSource: whatsappLogo
+    },
+  ]
+}
+
+export const getSocialMediaData = () => {
+  return [
+    {
+      name: "instagram",
+      link: "https://www.instagram.com/rizky.azizi02/",
+      imgSource: instagramLogo
+    },
+    {
+      name: "linkedin",
+      link: "https://www.linkedin.com/in/m-rizky-azizi-637075217/",
+      imgSource: linkedinLogo
+    },
+    {
+      name: "github",
+      link: "https://github.com/R4Z121",
+      imgSource: githubIcons
+    }
   ]
 }
