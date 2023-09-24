@@ -121,15 +121,24 @@ export const getProjectsData = () => {
     },
     {
       id: 3,
+      title: "RZ-Folio",
+      deploy: true,
+      link: "https://crypt4z.netlify.app/",
+      desc: "My first Portfolio Website Built with React",
+      github: "https://github.com/R4Z121/RZ-Folio",
+      tools: ["HTML","CSS","Javascript","TailwindCSS","React","Vite.js"]
+    },
+    {
+      id: 4,
       title: "Rainfallz",
       deploy: false,
       link: "",
       desc: "RainfallZ is an application to predict the amount of rainfall in Banyuasin Regency, South Sumatra, Indonesia. The prediction method that used in this application are Tsukamoto Fuzzy and Combination of Tsukamoto Fuzzy and Artificial Bee Colony Algorithm.",
       github: "https://github.com/R4Z121/rainfallz",
-      tools: ["HTML","CSS","Javascript","Codeigniter 4","MySQL","Composer"]
+      tools: ["HTML","CSS","Javascript","Bootstrap","Codeigniter 4","MySQL","Composer"]
     },
     {
-      id: 4,
+      id: 5,
       title: "Crypt4Z",
       deploy: true,
       link: "https://crypt4z.netlify.app/",
@@ -137,14 +146,5 @@ export const getProjectsData = () => {
       github: "https://github.com/R4Z121/Crypt4Z",
       tools: ["HTML","CSS","Javascript","TailwindCSS","Webpack"]
     },
-    {
-      id: 5,
-      title: "RZ-Folio",
-      deploy: true,
-      link: "https://crypt4z.netlify.app/",
-      desc: "My first Portfolio Website Built with React",
-      github: "https://github.com/R4Z121/RZFolio",
-      tools: ["HTML","CSS","Javascript","TailwindCSS","React","Vite.js"]
-    }
   ]
 }
