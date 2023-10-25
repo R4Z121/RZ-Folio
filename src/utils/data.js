@@ -152,6 +152,15 @@ export const getProjectsData = () => {
       github: "https://github.com/R4Z121/Crypt4Z",
       tools: ["HTML","CSS","Javascript","TailwindCSS","Webpack"]
     },
+    {
+      id: 6,
+      title: "SongLyricZ",
+      deploy: true,
+      link: "https://songlyricz.vercel.app/",
+      desc: "SongLyricZ is a web app to find songs lyrics. The API used in this project is \"Genius - Song Lyrics\" from Rapid API. This project built to implement some new knowledges that I've earned while learning Next.js",
+      github: "https://github.com/R4Z121/songlyricz",
+      tools: ["React","Next.js","TalwindCSS"]
+    }
   ]
 }
 
