@@ -15,12 +15,13 @@ export default function App() {
     contactRef : useRef(null)
   }
 
-  const linkedButtonClicked = (ref) => {
+  const linkedButtonClicked = (ref,toggleNav=null,setToggleNav=null) => {
     window.scrollTo({
       top: ref.current.offsetTop - 60,
       left: 0,
       behavior: "smooth"
     })
+    setToggleNav(!toggleNav);
   }
 
   return (

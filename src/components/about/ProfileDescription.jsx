@@ -16,10 +16,10 @@ export default function ProfileDescription() {
   }
 
   return (
-    <div className="flex flex-col gap-6 items-center md:items-start max-w-96">
+    <div className="flex flex-col gap-6 items-center md:items-start max-w-96 lg:max-w-2xl lg:w-1/2">
       <div className="flex flex-col gap-6 items-center md:items-start">
         <h3 className="text-xl sm:text-2xl lg:text-4xl text-center md:text-start ">{detail.title}</h3>
-        <p className="text-sm sm:text-base text-center md:text-start">{detail.description}</p>
+        <p className="text-sm sm:text-base lg:text-xl text-center md:text-start">{detail.description}</p>
       </div>
       <div className="flex justify-center gap-4 w-full md:justify-start">
         <ProfileCard imageSource={medalLogo} title="Experiences" description={`${detail.experience}+ years`} />
