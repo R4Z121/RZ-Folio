@@ -129,7 +129,7 @@ export const getProjectsData = () => {
       id: 3,
       title: "RZ-Folio",
       deploy: true,
-      link: "https://crypt4z.netlify.app/",
+      link: "https://rzfolio.netlify.app/",
       desc: "My first Portfolio Website Built with React",
       github: "https://github.com/R4Z121/RZ-Folio",
       tools: ["HTML","CSS","Javascript","TailwindCSS","React","Vite.js"]

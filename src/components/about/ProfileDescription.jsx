@@ -16,12 +16,12 @@ export default function ProfileDescription() {
   }
 
   return (
-    <div className="flex flex-col gap-6 items-center md:items-start max-w-96 lg:max-w-2xl lg:w-1/2">
-      <div className="flex flex-col gap-6 items-center md:items-start">
-        <h3 className="text-xl sm:text-2xl lg:text-4xl text-center md:text-start ">{detail.title}</h3>
-        <p className="text-sm sm:text-base lg:text-xl text-center md:text-start">{detail.description}</p>
+    <div className="flex flex-col gap-6 items-center sm:items-start max-w-96 lg:max-w-2xl sm:w-1/2">
+      <div className="flex flex-col gap-3 items-center sm:items-start">
+        <h3 className="text-base xs:text-lg md:text-2xl lg:text-3xl text-center sm:text-start font-bold">{detail.title}</h3>
+        <p className="text-xs xs:text-sm md:text-base lg:text-lg text-center sm:text-start">{detail.description}</p>
       </div>
-      <div className="flex justify-center gap-4 w-full md:justify-start">
+      <div className="flex justify-center gap-4 w-full sm:justify-start">
         <ProfileCard imageSource={medalLogo} title="Experiences" description={`${detail.experience}+ years`} />
         <ProfileCard imageSource={suitcaseLogo} title="Completed" description={`${detail.completeProjects}+ projects`} />
       </div>

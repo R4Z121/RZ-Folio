@@ -17,7 +17,7 @@ export default function App() {
 
   const linkedButtonClicked = (ref,toggleNav=null,setToggleNav=null) => {
     window.scrollTo({
-      top: ref.current.offsetTop - 60,
+      top: ref.current.offsetTop - 55,
       left: 0,
       behavior: "smooth"
     })
@@ -34,7 +34,9 @@ export default function App() {
         <About componentRef={navRefs.aboutRef} />
         <Skill componentRef={navRefs.skillRef} />
         <Projects componentRef={navRefs.projectRef} />
-        <Footer componentRef={navRefs.contactRef} />
+        <div className="mt-12">
+          <Footer componentRef={navRefs.contactRef} />
+        </div>
       </div>
     </div>
   )  

@@ -3,7 +3,7 @@ export default function ProjectTools ({projectTools}) {
     <div className="flex flex-wrap gap-1">
       {
         projectTools.map(tool => (
-          <div key={tool} className="p-2 rounded-md bg-app-dark-red">
+          <div key={tool} className="p-1 xs:p-2 rounded-md bg-app-dark-red">
             <p className="text-xs">{tool}</p>
           </div>
         ))

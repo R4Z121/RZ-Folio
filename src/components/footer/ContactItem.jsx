@@ -6,12 +6,12 @@ export default function ContactItem ({data}) {
         {data.desc.map(text => 
           data.link ? (
             <a href={data.link} target="_blank" key={text}>
-              <p className="text-base md:text-lg leading-none md:leading-none">{text}</p>
+              <p className="text-sm md:text-base lg:text-lg leading-none md:leading-none">{text}</p>
             </a>
           )
           :
           (
-            <p key={text} className="text-base md:text-lg leading-none md:leading-none">{text}</p>
+            <p key={text} className="text-sm md:text-base lg:text-lg leading-none md:leading-none">{text}</p>
           )
         )}
       </div>
