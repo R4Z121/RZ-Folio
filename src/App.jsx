@@ -21,7 +21,9 @@ export default function App() {
       left: 0,
       behavior: "smooth"
     })
-    setToggleNav(!toggleNav);
+    if(setToggleNav) {
+      setToggleNav(!toggleNav);
+    }
   }
 
   return (
@@ -31,7 +33,7 @@ export default function App() {
         <Jumbo componentRef={navRefs.jumboRef} linkedRef={navRefs.aboutRef} linkedRefHandler={linkedButtonClicked} />
       </div>
       <div className="flex flex-col gap-7">
-        <About componentRef={navRefs.aboutRef} />
+        <About componentRef={navRefs.aboutRef} linkedRef={navRefs.projectRef} linkedRefHandler={linkedButtonClicked}  />
         <Skill componentRef={navRefs.skillRef} />
         <Projects componentRef={navRefs.projectRef} />
         <div className="mt-12">

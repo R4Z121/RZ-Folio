@@ -8,7 +8,7 @@ import cvFile from "../../assets/pdf/cv - r4z121.pdf";
 import { getProfileDescription } from "../../utils/data";
 import { useRef } from "react";
 
-export default function ProfileDescription() {
+export default function ProfileDescription({linkedRef,linkedRefHandler}) {
   const downloadRef = useRef(null);
   const detail = getProfileDescription();
   const downloadCvHandler = (ref) => {
@@ -23,7 +23,7 @@ export default function ProfileDescription() {
       </div>
       <div className="flex justify-center gap-4 w-full sm:justify-start">
         <ProfileCard imageSource={medalLogo} title="Experiences" description={`${detail.experience}+ years`} />
-        <ProfileCard imageSource={suitcaseLogo} title="Completed" description={`${detail.completeProjects}+ projects`} />
+        <ProfileCard imageSource={suitcaseLogo} title="Completed" description={`${detail.completeProjects}+ projects`} linkedRef={linkedRef} linkedRefHandler={linkedRefHandler} />
       </div>
       <LinkedButton img={downloadLogo} altImg="download-icons" content="Download CV" clickEvent={() => downloadCvHandler(downloadRef)} />
       <a href={cvFile} className="hidden" ref={downloadRef} download></a>
