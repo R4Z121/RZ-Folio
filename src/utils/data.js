@@ -5,12 +5,10 @@ import jqueryLogo from '../assets/img/skills/jquery-logo.png';
 import phpLogo from '../assets/img/skills/php-logo.png';
 import codeigniterLogo from '../assets/img/skills/codeigniter-logo.png';
 import reactLogo from '../assets/img/skills/react-logo.png';
-import nextjsLogo from '../assets/img/skills/nextjs-logo.png';
 import bootstrapLogo from '../assets/img/skills/bootstrap-logo.png';
 import tailwindLogo from '../assets/img/skills/tailwind-logo.png';
 import gitLogo from '../assets/img/skills/git-logo.png';
 import githubLogo from '../assets/img/skills/github-logo.png';
-import postmanLogo from '../assets/img/skills/postman-logo.png';
 import locationLogo  from "../assets/icons/location.svg";
 import mailLogo  from "../assets/icons/mail.svg";
 import whatsappLogo  from "../assets/icons/whatsapp.svg";
@@ -74,33 +72,23 @@ export const getSkillData = () => {
     },
     {
       id: 8,
-      name: "Next.JS",
-      logo: nextjsLogo
-    },
-    {
-      id: 9,
       name: "Bootstrap",
       logo: bootstrapLogo
     },
     {
-      id: 10,
+      id: 9,
       name: "Tailwind CSS",
       logo: tailwindLogo
     },
     {
-      id: 11,
+      id: 10,
       name: "Git",
       logo: gitLogo
     },
     {
-      id: 12,
+      id: 11,
       name: "GitHub",
       logo: githubLogo
-    },
-    {
-      id: 13,
-      name: "Postman",
-      logo: postmanLogo
     },
   ]
 }
