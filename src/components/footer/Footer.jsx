@@ -16,7 +16,7 @@ export default function Footer ({componentRef}) {
         </div>
       </div>
       <footer className="flex justify-center items-center p-5 text-white mt-10">
-        <p className="text-xs md:text-sm lg:text-base text-center">Copyright © 2022 All rights reserved</p>
+        <p className="text-xs md:text-sm lg:text-base text-center">Copyright © {new Date().getFullYear()} All rights reserved</p>
       </footer>
     </div>
   )

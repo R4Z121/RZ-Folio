@@ -3,7 +3,6 @@ import ProfileCard from "./ProfileCard";
 import downloadLogo from "../../assets/icons/download.svg";
 import suitcaseLogo from "../../assets/icons/suitcase.svg";
 import medalLogo from "../../assets/icons/medal.svg";
-import cvFile from "../../assets/pdf/cv - r4z121.pdf";
 
 import { getProfileDescription } from "../../utils/data";
 import { useRef } from "react";
@@ -26,7 +25,7 @@ export default function ProfileDescription({linkedRef,linkedRefHandler}) {
         <ProfileCard imageSource={suitcaseLogo} title="Completed" description={`${detail.completeProjects}+ projects`} linkedRef={linkedRef} linkedRefHandler={linkedRefHandler} />
       </div>
       <LinkedButton img={downloadLogo} altImg="download-icons" content="Download CV" clickEvent={() => downloadCvHandler(downloadRef)} />
-      <a href={cvFile} className="hidden" ref={downloadRef} download></a>
+      <a href="https://drive.google.com/file/d/1G3PojHzzg8XsVNeASn-rAMPkC0IKkbjK/view?usp=sharing" target="blank" className="hidden" ref={downloadRef}></a>
     </div>
   )
 }
